@@ -30,12 +30,12 @@ public class UserController {
         model.addAttribute("user", userService.getUser(id));
         return "user";
     }
+
     @GetMapping("/new")
     public String newUser(Model model) {
         model.addAttribute("user", new User());
         return "new";
     }
-
 
 
     @PostMapping()
